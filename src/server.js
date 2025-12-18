@@ -33,9 +33,6 @@ dataConnection();
 // ROUTING IN EXPRESS;
 app.use("/api/v1", userAuth);
 app.use("/api/v1", propertyEndpoint);
-app.get("/mylove", (req, res) => {
-  res.json({ message: "new api loading" });
-});
 
 app.listen(8080, () => {
   console.log(`server running on port 8080`);
